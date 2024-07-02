@@ -45,3 +45,4 @@ urllib3==2.2.2
 watchdog==4.0.1
 wheel==0.43.0
 xlrd==2.0.1
+pathlib==1.0.1
