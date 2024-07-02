@@ -13,7 +13,7 @@ for uploaded_file in uploaded_files:
     if not uploaded_file.name.startswith("~") and uploaded_file.name.endswith(".xlsx"):
         name_of_file = uploaded_file.name.split('.')[0]
         file_extension = uploaded_file.name.split('.')[1]
-        abs_path = str(path) + '\\' + uploaded_file.name
+        abs_path = str(path) + '/' + uploaded_file.name
         if file_extension == 'xlsx':
             df = pd.read_excel(abs_path, engine='openpyxl')
         elif file_extension == 'xls':
